@@ -2,7 +2,6 @@ import numpy as np
 from scipy.linalg import sqrtm
 from matplotlib import pyplot as plt
 from math import exp, floor
-from playsound import playsound
 
 # define the metric for methods comparison
 def wasserstein(mean, var):
@@ -129,5 +128,3 @@ plt.ylabel('Wasserstein distance')
 plt.xlabel('Iteration')
 plt.legend()
 plt.show()
-
-playsound('FFVictory.wav', False)
