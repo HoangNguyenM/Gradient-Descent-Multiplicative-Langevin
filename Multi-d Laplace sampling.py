@@ -2,7 +2,6 @@ import numpy as np
 from matplotlib import pyplot as plt
 from math import exp, floor, log, tan, pi
 import scipy.special as sp
-from playsound import playsound
 
 def wasserstein(quant, sample):
     sample.sort()
@@ -172,6 +171,3 @@ plt.ylabel('Wasserstein distance')
 plt.xlabel('Iteration')
 plt.legend()
 plt.show()
-
-playsound('FFVictory.wav', False)
-        
